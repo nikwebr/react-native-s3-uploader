@@ -11,6 +11,7 @@ This project is a monorepo managed using [Yarn workspaces](https://yarnpkg.com/f
 - The library package in the root directory.
 - An example app in the `example/` directory.
 
+Ensure that you are using node v20.
 To get started with the project, run `yarn` in the root directory to install the required dependencies for each package:
 
 ```sh
@@ -45,6 +46,11 @@ To run the example app on iOS:
 
 ```sh
 yarn example ios
+```
+If you change the specification of the native module, run the following two commands in /example/ios:
+```sh
+bundle install
+bundle exec pod install
 ```
 
 To confirm that the app is running with the new architecture, you can check the Metro logs for a message like this:

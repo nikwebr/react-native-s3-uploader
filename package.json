@@ -149,16 +149,24 @@
     ]
   },
   "codegenConfig": {
-    "name": "S3UploaderSpec",
+    "name": "NativeS3UploaderSpec",
     "type": "modules",
     "jsSrcsDir": "src",
     "android": {
       "javaPackageName": "com.s3uploader"
+    },
+    "ios": {
+      "modulesProvider": {
+        "NativeLocalStorage": "RCTNativeS3Uploader"
+      }
     }
   },
   "create-react-native-library": {
     "languages": "kotlin-objc",
     "type": "turbo-module",
     "version": "0.50.3"
+  },
+  "dependencies": {
+    "@soreine/react-native-begin-background-task": "^0.1.1"
   }
 }
