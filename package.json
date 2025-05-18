@@ -1,6 +1,6 @@
 {
   "name": "react-native-s3-uploader",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "chunked background uploader to s3 compatible endpoints",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
