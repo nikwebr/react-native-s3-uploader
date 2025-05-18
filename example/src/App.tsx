@@ -54,7 +54,7 @@ export default function App() {
             <ProgressBar progress={item.progress} />
             <Text>State: {item.state} %</Text>
             <Button title="Pause" onPress={() => item.pause()} />
-            <Button title="Resume" onPress={() => item.resume} />
+            <Button title="Resume" onPress={() => item.resume()} />
             <Button title="Cancel" onPress={() => item.cancel()} />
             <Button title="Restart" onPress={() => item.restart()} />
             <Button title="Clear" onPress={() => item.clear()} />
